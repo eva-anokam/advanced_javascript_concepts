@@ -1,5 +1,5 @@
 
-import { aboutPage, contactPage, homePage } from "./Page.js";
+import { HomePage } from "./HomePage.js";
 
 const Router = {
     init: () => {
@@ -29,7 +29,7 @@ const Router = {
         //navigate to a given route and update the page content based on the route
         switch (route) {
             case "/":
-                pageElement = homePage
+                pageElement = HomePage
                 break;
             case "/about":
                 pageElement = aboutPage
