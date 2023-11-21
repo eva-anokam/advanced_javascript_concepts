@@ -29,13 +29,7 @@ const Router = {
         //navigate to a given route and update the page content based on the route
         switch (route) {
             case "/":
-                pageElement = HomePage
-                break;
-            case "/about":
-                pageElement = aboutPage
-                break;
-            case "/contact":
-                pageElement = contactPage
+                pageElement = document.createElement("home-page")
                 break;
             default:
                 break;
