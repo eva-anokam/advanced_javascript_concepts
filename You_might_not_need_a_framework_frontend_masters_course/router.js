@@ -16,7 +16,7 @@ const Router = {
         //listen for page navigation
         window.addEventListener("popstate", (event) => {
             Router.go(event.state.route, false)
-            
+
         })
     },
     go: (route, addToHistory = true) => {
